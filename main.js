@@ -65,22 +65,7 @@ function clicktxt(z){
 clicktxt(0);
 clicktxt(1);
 clicktxt(2);
-clicktxt(3);
-
-	
-
-
-
-
-
-
-	
-
-
-
-
-
-   
+clicktxt(3);   
 
 	
 ;})
