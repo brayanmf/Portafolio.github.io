@@ -347,6 +347,20 @@
 	<script src="main.js"></script>
 
 	<!-- Compiled and minified JavaScript -->
+	<script>
+		var a= document.querySelectorAll("#p1")
+var b= document.querySelectorAll("#p2")
+function clicktxt(z){
+	a[z].addEventListener('click',function(){
+	b[z].classList.toggle('collapsible-body1')
+		})
+}
+clicktxt(0);
+clicktxt(1);
+clicktxt(2);
+clicktxt(3);
+	</script>
+	
 
 </body>
 </html>
