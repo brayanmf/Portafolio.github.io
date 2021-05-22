@@ -61,12 +61,11 @@ header .barra-busqueda {
 	width: 100%;
 	height: 40px;
 	line-height: 40px;
-	outline: none;
+	outline: none;/*quitar el borde del click que tiene por defcto*/
 	color:rgb(156, 156, 156) ;
- 	background: rgb(255, 255, 255);
+	background: rgb(255, 255, 255);
 	padding: 0 20px;
-
-	border: none;
+	border: 0;
 	border-bottom: solid 1px rgb(156, 156, 156) ;
 	text-align: center;
 	font-size: 16px;
@@ -138,7 +137,7 @@ header .categorias a.activo {
 	width: 100%;
 	cursor: pointer;
 	vertical-align: top;
-	height:  380px;
+	height: 380px;
 
 
 
@@ -310,6 +309,7 @@ footer .redes-sociales a {
 	text-align: center;
 	border-radius: 100px;
 	transition: .3s ease all;
+
 }
 
 footer .redes-sociales .twitter {background: #1df236;}
@@ -347,6 +347,27 @@ footer .creado-por a:hover {text-decoration: underline;}
 /* ------------------------- */
 /* Mediaqueries */
 /* ------------------------- */
+
+
+@media screen and (max-width: 1000px) {
+	header .barra-busqueda {
+		width: 80%;
+	
+	}
+	.grid .item img {
+
+		height: 280px;
+	
+	
+	
+	}
+	.grid .item {
+		width: calc(35% - 20px);
+	}
+
+
+}
+
 @media screen and (max-width: 800px) {
 	.grid .item {
 		width: calc(50% - 20px);
@@ -392,7 +413,7 @@ footer .creado-por a:hover {text-decoration: underline;}
 	.img{
 
 	
-		width: calc(100% );
+		width: 100% ;
 	}
 	.skill1{
 	
@@ -401,7 +422,7 @@ footer .creado-por a:hover {text-decoration: underline;}
 	}
 	.skill2{
 	margin-top: 15px;
-		
+	
 		width:100%
 	}
 }
